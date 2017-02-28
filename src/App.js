@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {get} from 'podson'
+import JSONViewer from 'react-json-viewer'
 
 class App extends Component {
   constructor(props) {
@@ -25,10 +26,15 @@ class App extends Component {
         return
       }
 
-      this.setState({parsedFeed: JSON.stringify(data)})
+      const arrayData = [data]
 
-      console.log(data)
+      const episodeArray = arrayData.map((item) => {
+        { return item["episodes"]}
+      })
 
+      this.setState({ parsedFeed: episodeArray })
+
+      console.log(episodeArray)
     })
   }
 
@@ -40,10 +46,15 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Podcast</h2>
         </div>
+        <div>
         <p className="App-intro">
           <input type="text" value={this.state.feed} onChange={this.handleChange} />
           <button onClick={this.handlePodcastFeed} />
         </p>
+        </div>
+          <div>
+            <JSONViewer json={this.state.parsedFeed}></JSONViewer>
+          </div>
       </div>
     );
   }

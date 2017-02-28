@@ -3524,6 +3524,10 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+normalizr@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/normalizr/-/normalizr-3.2.2.tgz#542e915a260ca53279b76a63fb554185e9225f90"
+
 npmlog@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.0.2.tgz#d03950e0e78ce1527ba26d2a7592e9348ac3e75f"
@@ -4168,6 +4172,14 @@ react-dom@^15.4.2:
 react-json-table@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/react-json-table/-/react-json-table-0.1.1.tgz#712beb9a729167c2d6651987f42c73143217a1d6"
+
+react-json-viewer@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-json-viewer/-/react-json-viewer-1.6.0.tgz#0a5af043369cb238987f489040fe651253425d22"
+
+react-nested-json-table@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-nested-json-table/-/react-nested-json-table-0.2.0.tgz#c13fef3b6421fab95243d79d351ade3a67db753c"
 
 react-scripts@0.9.0:
   version "0.9.0"
